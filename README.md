@@ -2,6 +2,7 @@
 
 **Author:** Fatima Essa  
 **Project type:** End-to-end, interpretable probabilistic model in healthcare  
+**Project Overview Video:** https://youtu.be/P4EgDAVJE8o  
 **Tech stack:** Python 3.10 · pgmpy · scikit-learn · pandas · networkx · matplotlib
 
 > “Meaningful AI” in action: our model spots high-risk pregnancies with  
@@ -13,7 +14,7 @@
 ## 1. Problem Statement
 Maternal mortality remains a global concern.  We ask:
 
-**How can a transparent, probabilistic model identify mothers at greatest risk during pregnancy, childbirth and postpartum—using only routinely-captured vital signs?**
+**How can a transparent, probabilistic model identify mothers at greatest risk during pregnancy, childbirth and postpartum, using only routinely captured vital signs?**
 
 ---
 
@@ -24,7 +25,7 @@ Maternal mortality remains a global concern.  We ask:
 * **Pre-processing:**  
   * Remove HR outliers, impute missing values (mean / mode)  
   * Standardise numeric features  
-  * Stratified 80 / 20 train-test split to keep RiskLevel distribution. :contentReference[oaicite:1]{index=1}  
+  * Stratified 80 / 20 train-test split to keep RiskLevel distribution.
 
 ---
 
@@ -46,6 +47,6 @@ The final DAG exposes causal links (e.g., Blood-Pressure → RiskLevel) and supp
 | High-Risk | **0.93** | 0.78 | **0.94** | 0.25 |
 | Mid-Risk | 0.62 | 0.27 | 0.69 | 0.56 |
 | Low-Risk | 0.56 | **0.89** | 0.73 | 0.51 |
-| **Overall** | – | – | **0.79** | 0.72 |
+| **Overall** | - | – | **0.79** | 0.72 |
 
 The model prioritises **catching high-risk cases**—critical in obstetrics.
