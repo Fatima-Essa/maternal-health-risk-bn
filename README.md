@@ -49,4 +49,4 @@ The final DAG exposes causal links (e.g., Blood-Pressure → RiskLevel) and supp
 | Low-Risk | 0.56 | **0.89** | 0.73 | 0.51 |
 | **Overall** | - | – | **0.79** | 0.72 |
 
-The model prioritises **catching high-risk cases**,critical in obstetrics.
+The model prioritises **catching high-risk cases**, critical in obstetrics.
